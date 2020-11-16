@@ -8,3 +8,4 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Dependency directories
 node_modules/
+/assets/images/pd-images/

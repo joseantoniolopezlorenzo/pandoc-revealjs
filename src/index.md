@@ -1,6 +1,17 @@
 ---
 # general Pandoc options
-lang: es-ES # change e.g. to 'de-CH' for German (Switzerland)
+lang: es-ES
+author: Jall <jall.informatico@gmail.com>
+subtitle: Pandoc + reveal.js + Gulp
+title-prefix: Presentación de Jall Profesor
+description: Presentación de distintos proyectos desarrollados por Jall Profesor
+keywords:
+    - reveal.js
+    - pandoc
+    - web
+    - javascript
+    - gulp
+date: 16/11/2020
 css:
     - ./assets/custom.min.css # put your custom styles in this file
     - ./assets/katex.min.css

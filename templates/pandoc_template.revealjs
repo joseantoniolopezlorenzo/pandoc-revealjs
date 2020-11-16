@@ -3,19 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
+$-----------------------------------------------------------------------> author
 $for(author-meta)$
-  <meta name="author" content="$author-meta$">
+  <meta name="author" content="$author-meta$" />
 $endfor$
+$-------------------------------------------------------------------------> date
 $if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$">
+  <meta name="dcterms.date" content="$date-meta$" />
 $endif$
+$---------------------------------------------------------------------> keywords
 $if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
+$------------------------------------------------------------------> description
+$if(description)$
+  <meta name="description" content="$description$">
+$endif$
+$------------------------------------------------------------------------> title
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$-----------------------------------------------> SOCIAL MEDIA
+<meta property="og:title" content="$title-prefix$ - $title$">
+<meta property="og:description" content="$description$">
+<meta property="og:image" content="https://joseantoniolopezlorenzo.github.io/pandoc-revealjs/assets/images/meta-facebook-image.jpg">
+<meta property="og:url" content="https://joseantoniolopezlorenzo.github.io/pandoc-revealjs/">
+<meta name="twitter:image" content="https://joseantoniolopezlorenzo.github.io/pandoc-revealjs/assets/images/meta-twitter-image.jpg">
+<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="$title-prefix$">
+<meta name="twitter:image:alt" content="$title-prefix$">
+<meta name="twitter:site" content="@JallProfesor">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="./assets/reveal.js/dist/reset.min.css">
   <link rel="stylesheet" href="./assets/reveal.js/dist/reveal.min.css">
   <style>
