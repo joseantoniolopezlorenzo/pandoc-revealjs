@@ -1,0 +1,15 @@
+from: markdown+emoji
+to: revealjs
+fail-if-warnings: false
+standalone: true
+section-divs: true
+eol: lf
+filters:
+  - pandoc-static-katex
+  - pandoc-imagine
+template: ./templates/pandoc_template
+include-in-header:
+  - templates/header.txt
+variables:
+  author: Jall Profesor
+  lang: 'es-ES'

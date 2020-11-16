@@ -1,0 +1,54 @@
+{
+  "_from": "reveal.js-verticator@1.0.6",
+  "_id": "reveal.js-verticator@1.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-OvVLkmMHt81qDnN2SdB6ydHnTxGCJslyJC4BU2aEYklxHQewIdG5XkQbm7vVkFPLgnLCpMk9dAHKN2Vvd1k3bA==",
+  "_location": "/reveal.js-verticator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "reveal.js-verticator@1.0.6",
+    "name": "reveal.js-verticator",
+    "escapedName": "reveal.js-verticator",
+    "rawSpec": "1.0.6",
+    "saveSpec": null,
+    "fetchSpec": "1.0.6"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/reveal.js-verticator/-/reveal.js-verticator-1.0.6.tgz",
+  "_shasum": "7962a2d4ae6d29e81882d2c2edeeb36c9890467f",
+  "_spec": "reveal.js-verticator@1.0.6",
+  "_where": "/home/salim/Code/Eigene Projekte/salim_b/pandoc/revealjs-tpl",
+  "author": {
+    "name": "Martijn De Jongh"
+  },
+  "bugs": {
+    "url": "https://github.com/Martinomagnifico/reveal.js-verticator/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A plugin for Reveal.js 4 that adds indicators to show the amount of slides in a vertical stack",
+  "homepage": "https://github.com/Martinomagnifico/reveal.js-verticator",
+  "keywords": [
+    "reveal",
+    "reveal.js",
+    "vertical bullets",
+    "reveal-plugin",
+    "plugin",
+    "fullPage.js"
+  ],
+  "license": "MIT, Copyright (C) 2020 Martijn De Jongh",
+  "name": "reveal.js-verticator",
+  "peerDependencies": {
+    "reveal.js": "^4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinomagnifico/reveal.js-verticator.git"
+  },
+  "version": "1.0.6"
+}
