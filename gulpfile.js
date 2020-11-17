@@ -79,6 +79,7 @@ gulp.task(
       server: "./docs",
     });
     gulp.watch("./src/**/*.md", gulp.series("convert-md"));
+    gulp.watch("./templates/*.*", gulp.series("convert-md"));
     gulp.watch("./assets/*.css", gulp.series("minify-css"));
     gulp.watch("./assets/images/**/*.*", gulp.series("cp-images"));
     gulp.watch("./docs/**/*.html").on("change", reload);

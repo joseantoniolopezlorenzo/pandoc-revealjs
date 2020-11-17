@@ -13,13 +13,13 @@ keywords:
     - gulp
 date: 16/11/2020
 css:
-    - ./assets/custom.min.css # put your custom styles in this file
+    - ./assets/custom.min.css
     - ./assets/katex.min.css
 
 # title slide options
 title: SLIDESHOW
-title-slide-attributes: # for further title slide attributes, see https://pandoc.org/MANUAL.html#background-in-reveal.js-and-beamer
-    data-background-image: assets/images/unsplash-lERuUa_96uo.jpg
+title-slide-attributes:
+    data-background-image: assets/images/cies.jpg
     data-background-size: cover # can alternatively be set to `contain` for letterboxing
 
 # Pandoc options for reveal.js

@@ -1,0 +1,27 @@
+
+
+Keyboard Shortcuts
+
+KEY ACTION
+CTRL + Shift + F  Search
+N , SPACE Next slide
+P Previous slide
+← , H Navigate left
+→ , L Navigate right
+↑ , K Navigate up
+↓ , J Navigate down
+Home , Shift ←  First slide
+End , Shift → Last slide
+B , . Pause
+F Fullscreen
+ESC, O  Slide overview
+BACKSPACE Reset all drawings
+DEL Reset drawings on slide
+B Toggle chalkboard
+C Toggle notes canvas
+D Download drawings
+M Toggle menu
+S Speaker notes view
+X Next color
+Y Previous color
++ Clear drawings on slide
