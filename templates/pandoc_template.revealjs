@@ -48,8 +48,9 @@ $endif$
 
 $-- BEGIN custom section
 $if(verticator.enable)$
-  <link rel="stylesheet" href="./assets/reveal.js-verticator/plugin/verticator/verticator.min.css">
+  <link rel="stylesheet" href="./assets/verticator/verticator.min.css">
 $endif$
+
 $-- END custom section
 
 $for(css)$
@@ -101,26 +102,18 @@ $body$
   </div>
 
   <script src="./assets/reveal.js/dist/reveal.js"></script>
-
   // reveal.js plugins
   <script src="./assets/reveal.js/plugin/notes/notes.js"></script>
   <script src="./assets/reveal.js/plugin/search/search.js"></script>
   <script src="./assets/reveal.js/plugin/zoom/zoom.js"></script>
-$if(mathjax)$
-  <script src="./assets/reveal.js/plugin/math/math.js"></script>
-$endif$
+  <script src="./assets/reveal.js/plugin/menu/menu.js"></script>
 
 $-- BEGIN custom section
-  // third-party plugins
-$if(elapsedtimebar.enable)$
-  <script defer src="assets/reveal.js-plugins/elapsed-time-bar/elapsed-time-bar.js"></script>
-$endif$
-$if(spotlight.enable)$
-  <script src="assets/reveal.js-plugins/spotlight/spotlight.js"></script>
-$endif$
+
 $if(verticator.enable)$
-  <script src="assets/reveal.js-verticator/plugin/verticator/verticator.js"></script>
+  <script src="./assets/verticator/verticator.js"></script>
 $endif$
+
 $-- END custom section
 
   <script>
@@ -390,25 +383,39 @@ $endif$
           oppositecolor: '$verticator.oppositecolor$'
         },
 $endif$
+menu: { // https://github.com/denehyg/reveal.js-menu
+          side: 'left',
+          width: 'normal',
+          numbers: false,
+          titleSelector: 'h1, h2, h3, h4, h5, h6',
+          useTextContentForMissingTitles: false,
+          hideMissingTitles: true,
+          markers: true,
+          custom: false,
+          themes: true,
+          themesPath: 'dist/theme/',
+          transitions: false,
+          openButton: true,
+          openSlideNumber: false,
+          keyboard: true,
+          sticky: false,
+          autoOpen: true,
+          delayInit: false,
+          openOnInit: false,
+          loadIcons: true
+        },
 $-- END custom section
 
         // reveal.js plugins
         plugins: [
-
-$-- BEGIN custom section
-$if(spotlight.enable)$
-          RevealSpotlight,
-$endif$
-$if(verticator.enable)$
           Verticator,
-$endif$
-$-- END custom section
-
           RevealNotes,
           RevealSearch,
-          RevealZoom
+          RevealZoom,
+          RevealMenu
         ]
       });
+
     </script>
   $for(include-after)$
   $include-after$
