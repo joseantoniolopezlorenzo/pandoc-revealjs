@@ -403,14 +403,9 @@ menu: {
           loadIcons: true,
           custom: [
       {
-        title: 'Links',
-        icon: '<i class="fa fa-external-link-alt">',
-        src: './links.txt'
-      },
-      {
-        title: 'About',
+        title: 'Ayuda',
         icon: '<i class="fa fa-info">',
-        content: '<p>This slidedeck is created with reveal.js</p>'
+        src: './links.txt'
       }
     ]
         },

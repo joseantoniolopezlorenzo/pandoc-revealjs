@@ -1,59 +1,106 @@
 ---
 # general Pandoc options
-lang: es-ES
 author: Jall <jall.informatico@gmail.com>
+date: 17/11/2020
+
+# title slide options
+title: Pandoc - Reveal.js
+title-slide-attributes:
+    data-background-image: assets/images/cies.jpg
+    data-background-size: cover # can alternatively be set to `contain` for letterboxing
 subtitle: Pandoc + reveal.js + Gulp
-title-prefix: Presentación de Jall Profesor
-description: Presentación de distintos proyectos desarrollados por Jall Profesor
+title-prefix: Plantilla de presentaciones de Jall Profesor
+description: Plantilla de presentaciones realizada con Pandoc, reveal.js y gulp.
 keywords:
     - reveal.js
     - pandoc
     - web
     - javascript
     - gulp
-date: 16/11/2020
 css:
     - ./assets/custom.min.css
     - ./assets/katex.min.css
 
-# title slide options
-title: SLIDESHOW
-title-slide-attributes:
-    data-background-image: assets/images/cies.jpg
-    data-background-size: cover # can alternatively be set to `contain` for letterboxing
-
 # Pandoc options for reveal.js
 revealjs-url: ./assets/reveal.js
-theme: black
-#background-image: assets/images/unsplash-lERuUa_96uo.jpg # uncomment for the same background image on every slide
+theme: moon
 
-# reveal.js config; for more options like `parallaxBackgroundImage`, see https://revealjs.com/config/
+# reveal.js config;
 mouseWheel: false
 width: 1920
 height: 1080
 
 # additional reveal.js plug-in config
-## see https://github.com/Martinomagnifico/reveal.js-verticator#configuration
 verticator:
     enable: true
-    darktheme: true # set to `false` if you use a light theme
-    color: '' # manually set the normal verticator color
-    oppositecolor: '' # manually set the inverted verticator color
-    skipuncounted: true # Omit drawing Verticator bullets for slides that have `data-visibility="uncounted"` set?
-    clickable: true # Allow navigation to a slide by clicking on the corresponding Verticator bullet?
+    darktheme: true
+    color: '#42affa'
+    oppositecolor: ''
+    skipuncounted: true
+    clickable: true
 ---
 
-# 1st main slide {data-transition="convex"}
+# Pandoc {data-transition="slide"}
 
-## Set background color of individual slides {data-background-color="#fff"}
 
-Note:
-This will only display in the notes window.
+## Multiconversor de archivos.
+Una auténtica navaja suiza. Sorprende por su potencia y versatilidad. Código abierto.
 
-- You can set the background color of an individual slide by appending
+* creado por el profesor de filosofía [John MacFarlane](https://www.johnmacfarlane.net/)
+* con una amplia comunidad de usuarios y desarrolladores.
+* fácilmente extensible con *filtros* que aumentan su potencia.
+* una extensa documentación la encontrará en [Pandoc website](https://pandoc.org/).
+
+## Una grafo en vez de mil palabras.
+
+::: incremental
+
+* Las conversiones más utilizadas:
+    * markdown a $\LaTeX$ o *pdf*.
+    * markdown a *html*.
+    * markdown a *docx*.
+    * markdown a *epub*.
+* pero no son las únicas...
+
+:::
+
+---
+
+![](./assets/images/pandoc-conversor.png "Posibles coversiones"){ width=55% }
+
+## Markdowwn a Html {data-transition="convex"}
+Es más fácil escribir *markdown* que *html* (o $\LaTeX$).
+
+::: incremental
+
+- es un hecho comprobable.
+- si no vas a dedicarte a la programación web no te compensa\
+ el esfuerzo de aprender *html* y tecnologías asociadas.
+- en cambio aprender *markdown* es bastante fácil
+- escribes texto plano siguiendo una serie de pautas o convenciones.
+- **Pandoc** se encargará de convertir tus textos markdown(texto plano)\
+ a html(página web) utilizando una **plantilla**.
+- El proceso se puede *automatizar* de tal manera que\
+puedas tener una web completa con unos cuantos **markdown**.\
+Se conocen como **generadores de sitios estáticos**.
+
+:::
+
+---
+
+Por ejemplo, [esta web](https://joseantoniolopezlorenzo.github.io/pandoc-static-website/) está escrita en **markdown** y\
+ utiliza un [generador de sitio estático](https://github.com/joseantoniolopezlorenzo/pandoc-static-website):
+
+![](./assets/images/web-estatica.png "pandoc-static-website")
+
+
+
+## Extensiones. {data-transition="concave"}
+
 $$e^{iπ} + 1 = 0$$
+
 ~~~{.gnuplot im_fmt="svg" im_out="img" im_dir="assets/images/pd"}
-set terminal svg \
+set terminal svg enhanced background rgb 'white'\
     font "arial,10" fontscale 1.0
 set key inside left top vertical Right \
     noreverse enhanced autotitles box linetype -1 linewidth 1.000
@@ -61,100 +108,20 @@ set samples 400, 400
 plot [-10:10] real(sin(x)**besj0(x))
 ~~~
 
-## Bracketed Spans
 
-You can use [bracketed spans](https://pandoc.org/MANUAL.html#extension-bracketed_spans) to assign classes and attributes to text.
+# reveal.js {data-transition="convex"}
 
----
-
-```md
-[Text wrapped in a `<span>` with class `glowing`]{.glowing}
-```
-
----
-
-will result in:
-
----
-
-[Text wrapped in a `<span>` with class `glowing`]{.glowing}
-
-## Fenced Divs
-
-You can also use [fenced divs](https://pandoc.org/MANUAL.html#extension-fenced_divs) to assign classes and attributes to whole blocks of content.
-
----
-
-```md
-::: {style="text-shadow: 1px 1px 5px red;"}
-
-:::::: nonincremental
-
-- A non-incremental list...
-- ...
-
-::::::
-
-... followed by a paragraph...
-
-| ...And | some | table |
-| ---- | ----- | -------- |
-| all | with | ugly |
-| red | shadow | ✓ |
-
-:::
-```
-
----
-
-will result in:
-
----
-
-::: {style="text-shadow: 1px 1px 5px red;"}
-
-:::::: nonincremental
-
-- A non-incremental list...
-- ...
-
-::::::
-
-... followed by a paragraph...
-
-| ...And | some | table |
-| ---- | ----- | -------- |
-| all | with | ugly |
-| red | shadow | ✓ |
-
-:::
+## Pandoc y presentaciones{data-transition="convex"}
 
 
-# 2nd main slide
+## ¿Por qué reveal.js? {data-transition="convex"}
 
-## 1 {data-transition="convex" data-visibility="uncounted"}
+## Plugins
 
-- This slide has no corresponding Verticator bullet on the right ...
 
-- ... because the attribute `data-visibility="uncounted"` was set.
+# Gulp
 
-- This means the currently highlighted bullet corresponds to the previous slide.
-
-## 2 {data-transition="convex"}
-
-- You can use shortcodes to add emojis:
-
-- Writing `:alien:` will result in :alien:.
-
-- Unfortunately not all of the [GitHub shortcodes](https://github.com/ikatyang/emoji-cheat-sheet#readme) seem to be supported.
-
-## 3 {data-transition="convex"}
-
-Babam!
-
-# 3rd main slide
-
-# Thanks! {data-background-image=assets/images/unsplash-_g1WdcKcV3w.jpg}
+# Gracias {data-background-image=assets/images/adios.jpg}
 
 ## Slides
 

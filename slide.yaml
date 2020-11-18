@@ -11,5 +11,5 @@ template: ./templates/pandoc_template
 include-in-header:
   - templates/header.txt
 variables:
-  author: Jall Profesor
+  author: '@JallProfesor'
   lang: 'es-ES'
