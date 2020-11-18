@@ -1,27 +1,109 @@
 
+<p style="text-align:center">ATAJOS de TECLADO</p>
+<p>Todo se puede hacer usando el teclado</p>
+<p>'Ctl': tecla control<br> 'May': tecla mayúsculas<br> 'Esp': tecla espacio</p>
+<table class="help">
+  <caption>Movimiento de diapositivas</caption>
+  <tr>
+    <th>TECLAS</th>
+    <th>ACCIÓN</th>
+  </tr>
+<tbody>
+  <tr>
+    <td style="width:50%">Ctl + May + f</td>
+    <td style="width:50%">Buscar</td>
+  </tr>
+  <tr>
+    <td>n ó Esp</td>
+    <td>Siguiente</td>
+  </tr>
+  <tr>
+    <td>p</td>
+    <td>Previa</td>
+  </tr>
+  <tr>
+    <td>← ó h</td>
+    <td>Izquierda</td>
+  </tr>
+  <tr>
+    <td>→ ó l</td>
+    <td>Derecha</td>
+  </tr>
+  <tr>
+    <td>↑ ó k</td>
+    <td>Arriba</td>
+  </tr>
+  <tr>
+    <td>↓ ó j</td>
+    <td>Abajo</td>
+  </tr>
+  <tr>
+    <td>Inicio</td>
+    <td>1ª diapositiva</td>
+  </tr>
+  <tr>
+    <td>Fin</td>
+    <td>Última diapositiva</td>
+  </tr>
+</tbody>
+</table>
 
-Keyboard Shortcuts
+<table class="help">
+  <caption>Presentación</caption>
+  <tr>
+    <th>TECLAS</th>
+    <th>ACCIÓN</th>
+  </tr>
+<tbody>
+  <tr>
+    <td>Esc ó o</td>
+    <td>Miniatura</td>
+  </tr>
+  <tr>
+    <td>b ó .</td>
+    <td>Pausa</td>
+  </tr>
+  <tr>
+    <td>f</td>
+    <td>Pantalla completa</td>
+  </tr>
+   <tr>
+    <td>m</td>
+    <td>Alterna menú</td>
+  </tr>
+</tbody>
+</table>
 
-KEY ACTION
-CTRL + Shift + F  Search
-N , SPACE Next slide
-P Previous slide
-← , H Navigate left
-→ , L Navigate right
-↑ , K Navigate up
-↓ , J Navigate down
-Home , Shift ←  First slide
-End , Shift → Last slide
-B , . Pause
-F Fullscreen
-ESC, O  Slide overview
-BACKSPACE Reset all drawings
-DEL Reset drawings on slide
-B Toggle chalkboard
-C Toggle notes canvas
-D Download drawings
-M Toggle menu
-S Speaker notes view
-X Next color
-Y Previous color
-+ Clear drawings on slide
+<table class="help">
+  <caption>Anotaciones</caption>
+  <tr>
+    <th>TECLAS</th>
+    <th>ACCIÓN</th>
+  </tr>
+<tbody>
+  <tr>
+    <td>b</td>
+    <td>Alterna pizarra</td>
+  </tr>
+  <tr>
+    <td>c</td>
+    <td>Alterna marcador</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>Siguiente color</td>
+  </tr>
+   <tr>
+    <td>y</td>
+    <td>Color previo</td>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>Limpia anotaciones</td>
+  </tr>
+  <tr>
+    <td>Retroceso</td>
+    <td>Borra todas las anotaciones</td>
+  </tr>
+</tbody>
+</table>

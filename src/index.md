@@ -44,6 +44,13 @@ verticator:
 
 
 ## Multiconversor de archivos.
+
+::: notes
+
+Prueba de nota
+
+:::
+
 Una auténtica navaja suiza. Sorprende por su potencia y versatilidad. Código abierto.
 
 * creado por el profesor de filosofía [John MacFarlane](https://www.johnmacfarlane.net/)

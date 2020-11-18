@@ -221,7 +221,7 @@
   height: calc(100% - 60px);
   overflow-x: hidden;
   overflow-y: auto;
-  color: #aaa;
+  color: #ccc;
 }
 
 .slide-menu-wrapper .slide-menu-panel.active-menu-panel {

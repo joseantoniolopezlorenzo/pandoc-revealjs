@@ -106,7 +106,6 @@ $body$
   <script src="./assets/reveal.js/plugin/zoom/zoom.js"></script>
   <script src="./assets/reveal.js/plugin/menu/menu.js"></script>
   <script src="./assets/reveal.js/plugin/chalkboard/plugin.js"></script>
-  <script src="./assets/reveal.js/plugin/helpbutton/helpbutton.js"></script>
   <script src="./assets/reveal.js/plugin/title-footer/title-footer.js"></script>
   <script src="./assets/verticator/verticator.js"></script>
 
@@ -443,8 +442,7 @@ $-- END custom section
           RevealSearch,
           RevealZoom,
           RevealMenu,
-          RevealChalkboard,
-          HelpButton
+          RevealChalkboard
         ]
       });
     title_footer.initialize("Jall Profesor", ""); 
