@@ -1,6 +1,5 @@
 
 <p style="text-align:center">ATAJOS de TECLADO</p>
-<p>Todo se puede hacer usando el teclado</p>
 <p>'Ctl': tecla control<br> 'May': tecla mayúsculas<br> 'Esp': tecla espacio</p>
 <table class="help">
   <caption>Movimiento de diapositivas</caption>
@@ -56,12 +55,12 @@
   </tr>
 <tbody>
   <tr>
-    <td>Esc ó o</td>
+    <td>Esc</td>
     <td>Miniatura</td>
   </tr>
   <tr>
-    <td>b ó .</td>
-    <td>Pausa</td>
+    <td>Ctl+May+s</td>
+    <td>Búsqueda</td>
   </tr>
   <tr>
     <td>f</td>
@@ -70,6 +69,10 @@
    <tr>
     <td>m</td>
     <td>Alterna menú</td>
+  </tr>
+  <tr>
+    <td>Ctl + Click</td>
+    <td>Zoom</td>
   </tr>
 </tbody>
 </table>

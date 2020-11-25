@@ -58,7 +58,7 @@ Una auténtica navaja suiza. Sorprende por su potencia y versatilidad. Código a
 * fácilmente extensible con *filtros* que aumentan su potencia.
 * una extensa documentación la encontrará en [Pandoc website](https://pandoc.org/).
 
-## Una grafo en vez de mil palabras.
+## Una grafo en vez de mil palabras. {data-transition="zoom"}
 
 ::: incremental
 
@@ -106,7 +106,7 @@ Por ejemplo, [esta web](https://joseantoniolopezlorenzo.github.io/pandoc-static-
 
 Hay infinidad de **filtros** de **Pandoc** que permiten ampliar las capacidades de **markdown**. En esta presentación usamos dos **filtros** de Pandoc a modo de ejemplo:
 
-1. [Pandoc static $\KaTeX$](https://pypi.org/project/pandoc_static_katex/) que nos perrmite escribir cualquier fórmula matemática; por ejemplo, $e^{iπ} + 1 = 0$
+1. [Pandoc static $\KaTeX$](https://pypi.org/project/pandoc_static_katex/) que nos permite escribir cualquier fórmula matemática; por ejemplo, $e^{iπ} + 1 = 0$
 
 2. [Pandoc Imagine](https://github.com/hertogp/imagine) que nos permite convertir bloques de código en imágenes; por ejemplo, la siguiente imagen está generada por el filtro usando **gnuplot**
 ~~~{.gnuplot im_fmt="svg" im_out="img" im_dir="assets/images/pd"}
@@ -126,13 +126,26 @@ plot [-10:10] real(sin(x)**besj0(x))
 
 ## ¿Por qué reveal.js? {data-transition="convex"}
 
+
 ## Plugins
 
+De serie [documentación](https://revealjs.com/plugins/)
+
+- zoom (pulse repetidamente *Ctl+Click*)
+
+
+---
+
+Plugins (un listado completo [aquí](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware))
+
+- [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) (*pizarra*)
+- [Menú](https://github.com/denehyg/reveal.js-menu) [pulse repetidamente 'm']
+- [Verticator](https://github.com/Martinomagnifico/reveal.js-verticator)
 
 # Gulp
 
 
-# Espero que le sea útil ⬇️ {data-background-image=assets/images/adios.jpg}
+# Espero que le sea útil {data-background-image=assets/images/adios.jpg}
 
 ## Mis redes
 
