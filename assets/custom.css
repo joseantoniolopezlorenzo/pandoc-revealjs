@@ -17,3 +17,16 @@ table.help {
 table.help > th, td{
 	border: 1px solid #ccc;
 }
+
+.subtitle {
+	color: #000;
+	font-weight: 600;
+}
+.author {
+	color: #000;
+	font-weight: 600;
+}
+.date {
+	color: #000;
+	font-weight: 600;
+}

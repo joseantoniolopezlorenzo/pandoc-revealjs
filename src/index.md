@@ -1,7 +1,7 @@
 ---
 # general Pandoc options
 author: Jall <jall.informatico@gmail.com>
-date: 17/11/2020
+date: 25/11/2020
 
 # title slide options
 title: Pandoc - Reveal.js
@@ -104,8 +104,11 @@ Por ejemplo, [esta web](https://joseantoniolopezlorenzo.github.io/pandoc-static-
 
 ## Extensiones. {data-transition="concave"}
 
-$$e^{iπ} + 1 = 0$$
+Hay infinidad de **filtros** de **Pandoc** que permiten ampliar las capacidades de **markdown**. En esta presentación usamos dos **filtros** de Pandoc a modo de ejemplo:
 
+1. [Pandoc static $\KaTeX$](https://pypi.org/project/pandoc_static_katex/) que nos perrmite escribir cualquier fórmula matemática; por ejemplo, $e^{iπ} + 1 = 0$
+
+2. [Pandoc Imagine](https://github.com/hertogp/imagine) que nos permite convertir bloques de código en imágenes; por ejemplo, la siguiente imagen está generada por el filtro usando **gnuplot**
 ~~~{.gnuplot im_fmt="svg" im_out="img" im_dir="assets/images/pd"}
 set terminal svg enhanced background rgb 'white'\
     font "arial,10" fontscale 1.0
@@ -128,8 +131,11 @@ plot [-10:10] real(sin(x)**besj0(x))
 
 # Gulp
 
-# Gracias {data-background-image=assets/images/adios.jpg}
 
-## Slides
+# Espero que le sea útil ⬇️ {data-background-image=assets/images/adios.jpg}
 
-`1n.pm/...`
+## Mis redes
+
+- [Twitter](https://twitter.com/JallProfesor)
+- [Facebook](https://www.facebook.com/joseantonio.lopezlorenzo.31508)
+- [GitHub](https://github.com/joseantoniolopezlorenzo)
