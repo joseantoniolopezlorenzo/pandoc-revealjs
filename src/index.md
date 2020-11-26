@@ -22,7 +22,6 @@ keywords:
 css:
     - ./assets/css/custom.min.css
     - ./assets/css/katex.min.css
-    - ./assets/css/jsxgraph.min.css
 
 # Pandoc options for reveal.js
 revealjs-url: ./assets/reveal.js
@@ -125,9 +124,6 @@ plot [-10:10] real(sin(x)**besj0(x))
 
 ## ¿Por qué reveal.js? {data-transition="convex"}
 
-::: {#box .jxgbox style="width:500px; height:500px;margin:0 auto;"}
-
-:::
 
 ## Plugins
 

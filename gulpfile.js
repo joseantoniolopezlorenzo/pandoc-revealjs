@@ -57,7 +57,7 @@ gulp.task("cp-images", function () {
 
 gulp.task("cp-javascript", function () {
   return gulp
-    .src(["./assets/js/reveal-config.js", "./assets/js/jsxgraph-script.js"])
+    .src(["./assets/js/reveal-config.js"])
     .pipe(concat("scripts.js"))
     .pipe(uglify())
     .pipe(gulp.dest("./docs/assets/js"));

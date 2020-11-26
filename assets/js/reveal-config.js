@@ -102,4 +102,5 @@ Reveal.initialize({
   // reveal.js plugins
   plugins: [Verticator, RevealSearch, RevealZoom, RevealMenu, RevealChalkboard],
 });
+// title footer
 title_footer.initialize("Jall Profesor", "");
