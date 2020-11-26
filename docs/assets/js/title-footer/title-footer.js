@@ -69,7 +69,7 @@ title_footer.initialize=function(title,background)
     // Link to the Title-Footer CSS
 
     var link=document.createElement("link");
-    link.href="./assets/reveal.js/plugin/title-footer/title-footer.css";
+    link.href="./assets/js/title-footer/title-footer.css";
     link.type="text/css";
     link.rel="stylesheet";
     document.getElementsByTagName("head")[0].appendChild(link);

@@ -17,9 +17,12 @@ keywords:
     - web
     - javascript
     - gulp
+    - pweb presentation
+    - presentaciones web
 css:
-    - ./assets/custom.min.css
-    - ./assets/katex.min.css
+    - ./assets/css/custom.min.css
+    - ./assets/css/katex.min.css
+    - ./assets/css/jsxgraph.min.css
 
 # Pandoc options for reveal.js
 revealjs-url: ./assets/reveal.js
@@ -60,16 +63,12 @@ Una auténtica navaja suiza. Sorprende por su potencia y versatilidad. Código a
 
 ## Una grafo en vez de mil palabras. {data-transition="zoom"}
 
-::: incremental
-
 * Las conversiones más utilizadas:
     * markdown a $\LaTeX$ o *pdf*.
     * markdown a *html*.
     * markdown a *docx*.
     * markdown a *epub*.
 * pero no son las únicas...
-
-:::
 
 ---
 
@@ -126,6 +125,9 @@ plot [-10:10] real(sin(x)**besj0(x))
 
 ## ¿Por qué reveal.js? {data-transition="convex"}
 
+::: {#box .jxgbox style="width:500px; height:500px;margin:0 auto;"}
+
+:::
 
 ## Plugins
 

@@ -4,6 +4,8 @@ var cleanCSS = require("gulp-clean-css");
 var rename = require("gulp-rename");
 var htmlmin = require("gulp-html-minifier");
 var gulpexec = require("gulp-exec");
+var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 var path = require("path");
 var browserSync = require("browser-sync").create();
 
@@ -41,10 +43,10 @@ gulp.task("convert-md", function () {
 
 gulp.task("minify-css", function () {
   return gulp
-    .src(["./assets/**/*.css"])
+    .src(["./assets/css/*.css"])
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("./docs/assets"));
+    .pipe(gulp.dest("./docs/assets/css"));
 });
 
 gulp.task("cp-images", function () {
@@ -55,8 +57,10 @@ gulp.task("cp-images", function () {
 
 gulp.task("cp-javascript", function () {
   return gulp
-    .src(["./assets/**/*.js"])
-    .pipe(gulp.dest("./docs/assets"));
+    .src(["./assets/js/reveal-config.js", "./assets/js/jsxgraph-script.js"])
+    .pipe(concat("scripts.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("./docs/assets/js"));
 });
 
 gulp.task("minify-html", function () {
@@ -67,6 +71,7 @@ gulp.task("minify-html", function () {
         collapseWhitespace: true,
         minifyCSS: true,
         minifyJS: true,
+        removeComments: true
       })
     )
     .pipe(gulp.dest("./docs"));
@@ -80,10 +85,12 @@ gulp.task(
     });
     gulp.watch("./src/**/*.md", gulp.series("convert-md"));
     gulp.watch("./templates/*.*", gulp.series("convert-md"));
-    gulp.watch("./assets/*.css", gulp.series("minify-css"));
+    gulp.watch("./assets/css/*.css", gulp.series("minify-css"));
+    gulp.watch("./assets/js/*.js", gulp.series("cp-javascript"));
     gulp.watch("./assets/images/**/*.*", gulp.series("cp-images"));
     gulp.watch("./docs/**/*.html").on("change", reload);
-    gulp.watch("./docs/assets/*.css").on("change", reload);
+    gulp.watch("./docs/assets/css/*.css").on("change", reload);
+    gulp.watch("./docs/assets/js/*.js").on("change", reload);
   })
 );
 

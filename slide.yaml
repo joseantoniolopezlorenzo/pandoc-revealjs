@@ -7,9 +7,7 @@ eol: lf
 filters:
   - pandoc-static-katex
   - pandoc-imagine
-template: ./templates/pandoc_template
-include-in-header:
-  - templates/header.txt
+template: ./templates/pandoc_template.html
 variables:
   author: '@JallProfesor'
   lang: 'es-ES'
