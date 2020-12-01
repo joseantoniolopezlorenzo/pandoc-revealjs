@@ -12,7 +12,7 @@ var browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const github = process.argv[4];
 
-gulp.task("convert-md", function () {
+gulp.task("convert-md", function() {
   var options = {
     continueOnError: false,
     pipeStdout: true,
@@ -34,14 +34,14 @@ gulp.task("convert-md", function () {
     .src("./src/**/*.md")
     .pipe(
       gulpexec(
-        (file) =>`pandoc -d slide -M github=${github} -s ${file.path} -o ${html(file.path)}`,
+        (file) => `pandoc -d slide -M github=${github} -s ${file.path} -o ${html(file.path)}`,
         options
       )
     )
     .pipe(gulpexec.reporter(reportOptions));
 });
 
-gulp.task("minify-css", function () {
+gulp.task("minify-css", function() {
   return gulp
     .src(["./assets/css/*.css"])
     .pipe(cleanCSS({ compatibility: "ie8" }))
@@ -49,21 +49,20 @@ gulp.task("minify-css", function () {
     .pipe(gulp.dest("./docs/assets/css"));
 });
 
-gulp.task("cp-images", function () {
+gulp.task("cp-images", function() {
   return gulp
-     .src(["./assets/images/*.*", "./assets/images/**/*.png", "./assets/images/**/*.svg"])
+    .src(["./assets/images/*.*", "./assets/images/**/*.png", "./assets/images/**/*.svg"])
     .pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task("cp-javascript", function () {
+gulp.task("cp-javascript", function() {
   return gulp
-    .src(["./assets/js/reveal-config.js"])
-    .pipe(concat("scripts.js"))
+    .src(["./assets/js/scripts.js"])
     .pipe(uglify())
     .pipe(gulp.dest("./docs/assets/js"));
 });
 
-gulp.task("minify-html", function () {
+gulp.task("minify-html", function() {
   return gulp
     .src("./docs/**/*.html")
     .pipe(
@@ -79,7 +78,7 @@ gulp.task("minify-html", function () {
 
 gulp.task(
   "server",
-  gulp.series("convert-md","cp-javascript", "minify-css", "cp-images", function () {
+  gulp.series("convert-md", "cp-javascript", "minify-css", "cp-images", function() {
     browserSync.init({
       server: "./docs",
     });

@@ -1,4 +1,11 @@
-/* put your custom CSS here */
+/* modificación de iconos */
+
+
+/* modificación posición de los controles */
+
+.reveal .controls {
+  bottom: 34px;
+}
 
 .inverted {
   color: #191919;
@@ -7,30 +14,35 @@
 .glowing {
   text-shadow: 0 0 3px #ff6600, 0 0 5px #ffff66;
 }
+
 table.help {
   border: 1px solid #ccc;
-  width:100%;
+  width: 100%;
   text-align: center;
   margin-top: 20px;
 }
 
-table.help > th, td{
-	border: 1px solid #ccc;
+table.help>th,
+td {
+  border: 1px solid #ccc;
 }
 
-h1.title{
-	color: #000;
+h1.title {
+  color: #000;
 }
+
 .subtitle {
-	color: #000;
-	font-weight: bold;
-	font-size: 2.3em;
+  color: #000;
+  font-weight: bold;
+  font-size: 2.3em;
 }
+
 .author {
-	color: #000;
-	font-weight: bold;
+  color: #000;
+  font-weight: bold;
 }
+
 .date {
-	color: #000;
-	font-weight: bold;
+  color: #000;
+  font-weight: bold;
 }

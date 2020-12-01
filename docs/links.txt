@@ -59,7 +59,7 @@
     <td>Miniatura</td>
   </tr>
   <tr>
-    <td>Ctl+May+s</td>
+    <td>Ctl+May+f</td>
     <td>Búsqueda</td>
   </tr>
   <tr>
