@@ -2,7 +2,7 @@
   "name": "revealjs-tpl-master",
   "version": "1.0.0",
   "description": "This is a ready-to-go file compilation to create a [reveal.js](https://revealjs.com/) presentation using [Pandoc](https://pandoc.org/).",
-  "main": "index.js",
+  "main": "",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.13",
@@ -16,8 +16,7 @@
   },
   "scripts": {
     "start": "gulp default --options false",
-    "build": "gulp build  --options true && ./togithub.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build  --options true && ./togithub.sh"
   },
   "author": "",
   "license": "ISC"

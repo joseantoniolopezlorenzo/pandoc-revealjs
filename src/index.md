@@ -55,7 +55,7 @@ verticator:
 * fácilmente extensible con *filtros* que aumentan su potencia.
 * una extensa documentación la encontrará en [Pandoc website](https://pandoc.org/).
 
-## Una grafo en vez de mil palabras. {data-transition="convex"}
+## Una gráfica mejor que mil palabras. {data-transition="convex"}
 
 * Las conversiones más utilizadas:
     * markdown a $\LaTeX$ o *pdf*.
@@ -95,7 +95,7 @@ Por ejemplo, [esta web](https://joseantoniolopezlorenzo.github.io/pandoc-static-
 
 
 
-## Extensiones. {data-transition="convex"}
+## Extensiones {data-transition="convex"}
 
 Hay infinidad de **filtros** de **Pandoc** que permiten ampliar las capacidades de **markdown**.\
 En esta presentación usamos dos **filtros** de Pandoc a modo de ejemplo:
@@ -157,15 +157,17 @@ Mencionaré solamente los utilizados en esta presentación.
 
 # Gulp
 
-## Facilitando el trabajo, centrándonos en lo importante.
+## Facilitando el trabajo.
 
-Es automatizador de tareas que nos  permite crear flujos de trabajo  eficientes.
+Es automatizador de tareas. Se utiliza para crear flujos de trabajo  eficientes.
 
 - es flexible, adaptable.
-- es componible, tareas complejas a partir de tareas simples.
-- es eficiente.
+- es capaz de realizar tareas complejas a partir de tareas simples.
+- es muy eficiente.
+- nos permite centrarnos en lo importante.
 
-Si quieres saber cómo lo utilizamos échale un vistazo al archivo *gulpfile.js* del [repositorio](https://github.com/joseantoniolopezlorenzo/pandoc-revealjs) de GitHub.
+Si quieres saber cómo lo utilizamos échale un vistazo al \
+archivo *gulpfile.js* del [repositorio](https://github.com/joseantoniolopezlorenzo/pandoc-revealjs) de GitHub.
 
 Combinado con *npm* podemos lanzar dos tipos de tarea:
 
